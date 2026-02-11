@@ -11,6 +11,8 @@ body {
     scroll-behavior: smooth;
 }
 
+/* ================= NAVBAR ================= */
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -18,7 +20,8 @@ nav {
     position: fixed;
     width: 100%;
     backdrop-filter: blur(10px);
-    background: rgba(0,0,0,0.3);
+    background: rgba(0,0,0,0.4);
+    z-index: 1000;
 }
 
 nav h1 span {
@@ -44,12 +47,18 @@ nav ul li a:hover {
     color: #7c4dff;
 }
 
+/* ================= HERO ================= */
+
 .hero {
     height: 100vh;
     display: flex;
     align-items: center;
     padding: 0 8%;
     background: linear-gradient(135deg, #1a1a2e, #16213e);
+}
+
+.hero-content h2 {
+    font-weight: 300;
 }
 
 .hero-content h1 {
@@ -66,9 +75,17 @@ nav ul li a:hover {
     opacity: 0.8;
 }
 
+.hero-content p {
+    margin-top: 15px;
+    max-width: 600px;
+    opacity: 0.8;
+}
+
 .hero-buttons {
     margin-top: 25px;
 }
+
+/* ================= BUTTONS ================= */
 
 .primary-btn {
     background: linear-gradient(45deg, #7c4dff, #00d4ff);
@@ -78,6 +95,7 @@ nav ul li a:hover {
     text-decoration: none;
     margin-right: 15px;
     transition: 0.3s;
+    display: inline-block;
 }
 
 .primary-btn:hover {
@@ -90,7 +108,14 @@ nav ul li a:hover {
     border-radius: 30px;
     text-decoration: none;
     color: white;
+    transition: 0.3s;
 }
+
+.secondary-btn:hover {
+    background: #7c4dff;
+}
+
+/* ================= SECTIONS ================= */
 
 .section {
     padding: 100px 8%;
@@ -101,6 +126,8 @@ nav ul li a:hover {
     font-size: 32px;
     color: #7c4dff;
 }
+
+/* ================= CARDS ================= */
 
 .card {
     background: rgba(255,255,255,0.05);
@@ -116,6 +143,31 @@ nav ul li a:hover {
     background: rgba(124,77,255,0.1);
 }
 
+/* ================= CONTACT SECTION ================= */
+
 .contact {
     text-align: center;
+    padding: 120px 8%;
+    background: linear-gradient(135deg, #141426, #1f1f3a);
+}
+
+.contact h2 {
+    font-size: 42px;
+    margin-bottom: 30px;
+    background: linear-gradient(45deg, #7c4dff, #00d4ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.contact p {
+    font-size: 18px;
+    margin: 10px 0;
+    opacity: 0.95;
+    letter-spacing: 0.5px;
+}
+
+.contact .primary-btn {
+    margin-top: 25px;
+    display: inline-block;
+    font-weight: 500;
 }
