@@ -241,3 +241,15 @@ nav ul li a:hover {
 .certificate-img:hover {
     transform: scale(1.02);
 }
+.project-img {
+    width: 100%;
+    max-width: 850px;
+    margin-top: 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    transition: 0.3s ease;
+}
+
+.project-img:hover {
+    transform: scale(1.02);
+}
